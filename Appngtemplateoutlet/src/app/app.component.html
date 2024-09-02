@@ -1,0 +1,6 @@
+<app-apptemplate [headerTemplate]="action?changedTemplate:undefined"></app-apptemplate>
+<ng-template #changedTemplate let-status>
+  <div>Header Two</div>
+  <div>{{status.Statusname}}</div>
+  <div>👨‍❤️‍👨</div>
+</ng-template>

@@ -1,0 +1,10 @@
+<ng-container 
+    [ngTemplateOutlet]=" headerTemplate|| defaultHeader" 
+    [ngTemplateOutletContext]="{$implicit:Status}">
+</ng-container>
+<ng-template #defaultHeader>
+  <div>Header One</div>
+  <div>{{Status.Statusname}}</div>
+  <div>{{Status.StatusVale}}</div>
+</ng-template>
+
